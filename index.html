@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090d1d">
+  <meta name="description" content="Desenrola IA — Pergunte. Aprenda. Crie. Resolva. Converse, estude e explore soluções com inteligência artificial.">
+  <title>Desenrola IA — Pergunte. Aprenda. Crie. Resolva.</title>
+  <style>
+    :root {color-scheme:dark;--bg:#090d1d;--card:#10182e;--card2:#151c34;--line:#263655;--text:#f0f6ff;--muted:#9babc8;--blue:#13b7ff;--purple:#8864ff;--cyan:#6bf0ff;--shadow:0 28px 85px rgba(1,4,15,.42)}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,Segoe UI,Roboto,Arial,sans-serif;background:radial-gradient(ellipse 60% 36% at 55% -6%,rgba(57,76,175,.29),transparent 90%),radial-gradient(ellipse 35% 30% at 105% 25%,rgba(124,55,198,.13),transparent 80%),var(--bg);color:var(--text);min-height:100vh}
+    a{color:inherit}button,a{ -webkit-tap-highlight-color:transparent}a:focus-visible,button:focus-visible{outline:3px solid var(--cyan);outline-offset:4px} .container{width:min(1180px,calc(100% - 40px));margin:auto}
+    header{position:sticky;top:0;z-index:50;background:rgba(9,13,29,.88);border-bottom:1px solid #24314b;backdrop-filter:blur(16px)}.header-inner{height:79px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .brand{text-decoration:none;display:inline-flex;align-items:center;gap:12px;font-weight:850;font-size:21px;letter-spacing:-.7px;white-space:nowrap}.mark{position:relative;width:43px;height:43px;border:1px solid rgba(98,210,255,.55);border-radius:15px;display:grid;place-items:center;background:linear-gradient(145deg,#1b72e3,#4b22a7);box-shadow:inset 0 0 20px rgba(40,252,255,.18),0 0 28px #267dff38}.mark svg{width:29px;height:29px;filter:drop-shadow(0 0 5px #5defff)}.brand em{font-style:normal;color:#83dfff}
+    nav{display:flex;gap:27px;align-items:center}nav a{text-decoration:none;color:#cad7ee;font-size:14px;font-weight:600}nav a:hover{color:#78d8ff}.button{display:inline-flex;justify-content:center;align-items:center;gap:9px;padding:13px 19px;border:1px solid transparent;border-radius:12px;text-decoration:none;font-weight:750;letter-spacing:-.2px;font-size:14px;cursor:pointer;transition:transform .18s,background .18s,box-shadow .18s}.button:hover{transform:translateY(-2px)}.button.primary{color:#061022;background:linear-gradient(110deg,#23cafa,#8fa0ff);box-shadow:0 8px 27px rgba(44,137,255,.25)}.button.ghost{color:#eaf2ff;background:#17233e;border-color:#34486f}.button.small{padding:10px 16px;font-size:13px}
+    .hero{padding:80px 0 65px;text-align:center;position:relative}.pill{display:inline-flex;align-items:center;gap:8px;border:1px solid #32516e;background:#142542b8;border-radius:100px;color:#a3e7ff;padding:8px 13px;font-weight:700;font-size:12px}.dot{height:7px;width:7px;background:#4be9ba;border-radius:50%;box-shadow:0 0 15px #27d8ae}
+    h1{font-size:clamp(40px,6vw,76px);line-height:1.04;letter-spacing:-3.6px;margin:24px auto 19px;max-width:940px;font-weight:870}h1 .gradient{background:linear-gradient(95deg,#62e5ff 15%,#85acff 52%,#b291ff);background-clip:text;color:transparent}.hero p{max-width:700px;margin:0 auto;color:#b9c8e4;font-size:clamp(15px,2vw,19px);line-height:1.7}.actions{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:12px;margin:29px 0 0}.mini-note{font-size:12px;color:#7f92b4;margin-top:22px}
+    .features{padding:8px 0 72px}.section-head{text-align:center;max-width:730px;margin:0 auto 32px}.eyebrow{color:#72dfff;font-size:11px;font-weight:850;letter-spacing:2.2px;text-transform:uppercase}.section-head h2,.chat-head h2{margin:11px 0;color:#f5f8ff;font-size:clamp(26px,3.7vw,38px);letter-spacing:-1.3px}.section-head p{color:#aebedb;line-height:1.65;margin:0}.cards{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}.card{background:linear-gradient(155deg,rgba(24,37,68,.93),rgba(15,23,43,.95));border:1px solid #293a5e;border-radius:20px;padding:24px 21px;min-height:198px;box-shadow:0 6px 32px rgba(0,0,0,.13);transition:border-color .2s,transform .2s}.card:hover{transform:translateY(-3px);border-color:#496fa4}.glyph{width:42px;height:42px;display:grid;place-items:center;border-radius:13px;background:#193a61;color:#75dfff;font-size:21px}.glyph.violet{background:#342657;color:#c7a1ff}.card h3{font-size:16px;margin:18px 0 8px}.card p{font-size:13px;line-height:1.65;color:#b5c3dc;margin:0}
+    .chat-section{padding:0 0 78px;scroll-margin-top:105px}.chat-shell{overflow:hidden;border:1px solid #365177;border-radius:24px;box-shadow:var(--shadow);background:linear-gradient(135deg,#152344,#11172c)}.chat-head{display:flex;justify-content:space-between;align-items:center;gap:15px;padding:21px 27px;background:linear-gradient(90deg,rgba(12,38,67,.98),rgba(27,25,61,.98));border-bottom:1px solid #304261}.chat-head h2{font-size:22px;margin:0 0 6px}.chat-head p{font-size:13px;color:#b1c4e2;margin:0}.live{display:inline-flex;align-items:center;gap:7px;font-size:12px;color:#a1e9d2;font-weight:750;white-space:nowrap}.chat-frame{height:clamp(730px,84vh,920px);position:relative;background:#121728}.chat-frame iframe{width:100%;height:100%;border:0;display:block}.offline-chat{display:none;position:absolute;inset:0;align-items:center;justify-content:center;text-align:center;padding:30px;background:radial-gradient(circle at center,#192951 0%,#111728 75%)}.offline-chat .inner{max-width:570px}.offline-chat .badge{display:inline-block;background:#183e62;color:#92e9ff;border:1px solid #386d97;padding:8px 14px;border-radius:100px;font-size:12px;font-weight:700}.offline-chat h3{font-size:clamp(26px,4vw,36px);margin:22px 0 12px}.offline-chat p{color:#b8cbe9;line-height:1.7;margin:0 0 24px}.offline-chat .sub{font-size:12px;color:#8fa6c9;margin-top:20px}.chat-frame.local-preview iframe{display:none}.chat-frame.local-preview .offline-chat{display:flex}.chat-help{display:flex;gap:16px;align-items:center;justify-content:space-between;border-top:1px solid #2d4163;padding:13px 22px;flex-wrap:wrap;color:#b6c9e3;font-size:12px}.chat-help a{color:#83daff;text-underline-offset:3px}
+    .about{border:1px solid #2c3e60;border-radius:22px;padding:26px 31px;background:#101c32;margin-bottom:56px;display:flex;align-items:center;justify-content:space-between;gap:22px}.about strong{font-size:17px}.about p{color:#a5b9d5;line-height:1.62;font-size:13px;margin:9px 0 0;max-width:850px}footer{border-top:1px solid #21324e;padding:27px 0;color:#8fa3c2;font-size:12px}.foot{display:flex;gap:15px;align-items:center;justify-content:space-between;flex-wrap:wrap}.foot a{color:#a7dfff;text-underline-offset:3px}
+    @media(max-width:950px){.cards{grid-template-columns:repeat(2,minmax(0,1fr))}nav{gap:15px}.header-inner{height:69px}}@media(max-width:620px){.container{width:min(100% - 26px,1180px)}nav{gap:11px}nav a{display:none}.brand{font-size:18px}.mark{height:39px;width:39px}.hero{padding:50px 0 52px}h1{letter-spacing:-1.7px}.cards{grid-template-columns:1fr}.card{min-height:unset}.features{padding-bottom:50px}.chat-shell{border-radius:16px}.chat-head{padding:16px}.chat-head h2{font-size:18px}.chat-head p{font-size:11px}.chat-frame{height:780px}.about{padding:20px;display:block}.about .button{margin-top:16px}.chat-help{padding:12px 16px}.live{font-size:10px}}
+    @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
+  </style>
+</head>
+<body>
+  <header><div class="container header-inner">
+    <a class="brand" href="#inicio" aria-label="Desenrola IA, voltar ao início"><span class="mark" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="6" y="9" width="20" height="17" rx="7" stroke="#c7f7ff" stroke-width="2"/><path d="M16 5v4M12 5h8" stroke="#c7f7ff" stroke-width="2" stroke-linecap="round"/><path d="M11 17h3m4 0h3" stroke="#72edff" stroke-width="2.8" stroke-linecap="round"/><path d="M13 21q3 3 6 0" stroke="#c7f7ff" stroke-width="1.5" stroke-linecap="round"/></svg></span><span>Desenrola <em>IA</em></span></a>
+    <nav aria-label="Navegação principal"><a href="#inicio">Início</a><a href="#recursos">Recursos</a><a href="#conversar">Conversar</a><a class="button primary small" href="#conversar">Começar agora <span aria-hidden="true">↗</span></a></nav>
+  </div></header>
+  <main>
+    <section class="hero container" id="inicio"><span class="pill"><span class="dot"></span> Assistente disponível no Dify</span>
+      <h1>Pergunte. Aprenda.<br><span class="gradient">Crie. Resolva.</span></h1>
+      <p>Uma IA para curiosos, estudantes e profissionais. Tire dúvidas, explore ideias, interprete documentos e transforme perguntas em próximos passos.</p>
+      <div class="actions"><a class="button primary" href="#conversar">Conversar com a Desenrola IA <span aria-hidden="true">↗</span></a><a class="button ghost" href="#recursos">Explorar recursos <span aria-hidden="true">↓</span></a></div>
+      <div class="mini-note">A versão atual utiliza a Desenrola IA publicada no Dify. Respostas e análises devem ser verificadas quando forem importantes.</div>
+    </section>
+    <section class="features container" id="recursos" aria-labelledby="recursos-title"><div class="section-head"><div class="eyebrow">O que você pode fazer</div><h2 id="recursos-title">Soluções para diferentes desafios</h2><p>Da curiosidade do dia a dia ao trabalho com tecnologia e dados — com explicações adaptadas ao que você precisa.</p></div>
+      <div class="cards">
+        <article class="card"><div class="glyph" aria-hidden="true">✦</div><h3>Aprender e explorar</h3><p>Estudos, idiomas, explicações e dúvidas gerais em uma conversa acessível.</p></article>
+        <article class="card"><div class="glyph violet" aria-hidden="true">⌘</div><h3>Código e tecnologia</h3><p>Orientações para SQL, Python, desenvolvimento web e resolução de problemas técnicos.</p></article>
+        <article class="card"><div class="glyph" aria-hidden="true">▤</div><h3>Dados e arquivos</h3><p>Envie PDFs, imagens e planilhas para análises compatíveis com os recursos disponíveis.</p></article>
+        <article class="card"><div class="glyph violet" aria-hidden="true">◇</div><h3>Ideias e projetos</h3><p>Planeje soluções, refine requisitos e desenvolva projetos passo a passo.</p></article>
+      </div>
+    </section>
+    <section class="chat-section container" id="conversar" aria-labelledby="chat-title"><div class="chat-shell"><div class="chat-head"><div><h2 id="chat-title">Converse com a Desenrola IA</h2><p>Escreva sua mensagem ou anexe arquivos usando o chat abaixo.</p></div><span class="live"><span class="dot"></span> Chat da Desenrola IA</span></div>
+      <div class="chat-frame" id="chat-frame">
+        <div class="offline-chat" id="offline-chat"><div class="inner">
+          <span class="badge">Portal aberto no computador</span>
+          <h3>Converse com a Desenrola IA</h3>
+          <p>Você está visualizando o arquivo do site no seu computador. Para evitar o bloqueio do chat incorporado nesse modo, abra a assistente diretamente em uma nova aba.</p>
+          <a class="button primary" href="https://udify.app/chat/D08rp87E39C8yqTS" target="_blank" rel="noopener noreferrer">Abrir a Desenrola IA ↗</a>
+          <div class="sub">Ao publicar este portal em HTTPS, a integração na própria página poderá ser testada.</div>
+        </div></div>
+        <iframe title="Chat da Desenrola IA" src="https://udify.app/chatbot/D08rp87E39C8yqTS" allow="microphone; clipboard-write" referrerpolicy="strict-origin-when-cross-origin" loading="lazy"></iframe>
+      </div>
+      <div class="chat-help"><span>Se o chat incorporado não abrir, use o acesso direto.</span><a href="https://udify.app/chat/D08rp87E39C8yqTS" target="_blank" rel="noopener noreferrer">Abrir o aplicativo em outra aba ↗</a></div></div></section>
+    <section class="about container"><div><strong>Uma plataforma em evolução</strong><p>A interface deste portal incorpora a aplicação oficial da Desenrola IA hospedada no Dify. Criação automática de arquivos, sites publicados e imagens depende de ferramentas adicionais. Evite enviar informações sensíveis sem conhecer as políticas de privacidade aplicáveis.</p></div><a class="button ghost" href="https://udify.app/chat/D08rp87E39C8yqTS" target="_blank" rel="noopener noreferrer">Acesso direto ↗</a></section>
+  </main>
+  <footer><div class="container foot"><span>© <span id="year">2026</span> Desenrola IA. Pergunte. Aprenda. Crie. Resolva.</span><span>Portal de apresentação · IA integrada via Dify</span></div></footer>
+  <script>
+    document.getElementById('year').textContent = String(new Date().getFullYear());
+    // O acesso file:// pode restringir iframes de serviços externos.
+    // No teste local, forneça o aplicativo oficial para não mostrar um frame bloqueado.
+    if (window.location.protocol === 'file:') {
+      const frame = document.getElementById('chat-frame');
+      frame.classList.add('local-preview');
+      frame.querySelector('iframe').removeAttribute('src');
+    }
+  </script>
+</body>
+</html>
